@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/container"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_gravity="center_horizontal"
+
+tools:context=".MainMenu"
+tools:ignore="MergeRootFrame">
+
+<ImageView android:id="@+id/main_menu_title"
+    android:src="@drawable/breathebandlogo"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"
+    android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15pt"
+    android:layout_marginBottom="5pt"
+    />
+
+<Button
+    android:id="@+id/stress_log"
+    android:textColor="#FFFFFF"
+    android:background="#003366"
+    android:layout_width="145pt"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="@string/log_link"
+    android:textSize="15pt"
+    android:clickable="true"
+    android:onClick="displayLog"
+    android:padding="5pt"
+    android:layout_margin="5pt"
+    />
+
+<Button
+    android:id="@+id/breathing_exercise"
+    android:textColor="#FFFFFF"
+    android:background="#003366"
+    android:layout_width="145pt"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="@string/exercise_link"
+    android:textSize="15pt"
+    android:clickable="true"
+    android:onClick="displayExercise"
+
+    android:padding="5pt"
+    android:layout_margin="5pt"
+    />
+
+<Button
+    android:id="@+id/sync_with_device"
+    android:textColor="#FFFFFF"
+    android:background="#003366"
+    android:layout_width="145pt"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="@string/sync_link"
+    android:textSize="15pt"
+    android:clickable="true"
+    android:onClick="syncBreatheBand"
+    android:layout_margin="5pt"
+
+    android:padding="5pt"
+    />
+
+</LinearLayout>
